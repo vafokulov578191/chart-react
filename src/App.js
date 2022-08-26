@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Login from './Components/Login';
+import Exchange from './Components/Exchange'
+import Market from './Components/Market'
+import Wallets from './Components/Wallets'
+import Transictions from './Components/Transictions'
+import Overview from './Components/Overview'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Routes>  
+          <Route path='/' element={<Navigate path='/' to="/login" replace={true}/>} replace={true} />
+          <Route path='/Login' element={<Login/>} />
+          <Route path='/Exchange' element={<Exchange/>} />
+          <Route path='/Market' element={<Market/>} />
+          <Route path='/Wallets' element={<Wallets/>} />
+          <Route path='/Transictions' element={<Transictions/>} />
+          <Route path='/Overview' element={<Overview arr={[120, 20, 60]} />} />
+        </Routes>
+      </div>
   );
 }
 
