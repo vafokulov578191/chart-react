@@ -5,6 +5,7 @@ Chart.register(ArcElement, LineController, CategoryScale, LinearScale, PointElem
 
 
 const Dougnout = ({arr}) => {
+
   return (
     <Doughnut data={{
         datasets: [{

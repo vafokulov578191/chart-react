@@ -1,8 +1,61 @@
 import React from 'react'
+import Dashbord from './Dashbord'
+import Header from './Header'
+import { Box, Image, Text } from '@chakra-ui/react'
+import './style.css'
+import lg from '../assets/Overiew/Group 10.png'
+import la from '../assets/Overiew/Group 10 (1).png'
 
 const Market = () => {
   return (
-    <div>Market</div>
+    <Box className='wallet' w='100%' h='100vh' display='flex' gap='32px' >
+      <Dashbord markeT={'#32395E'} borderM={'2px solid #1288E8'} colorM={'white'} />
+      <Box display='flex' flexDirection='column' gap='25px' w='100%'>
+        <Header />
+        <Box w='99%' h='2px' backgroundColor='#2D317A' />
+        <Box w='100%' display='flex' flexDirection='column' gap='20px'>
+          <Text color='white' fontSize='20px'>Market</Text>
+          <Box w='100%' display='flex' flexWrap='wrap' p='30px' gap='35px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={lg} />
+            </Box>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+              <Image src={la} />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   )
 }
 

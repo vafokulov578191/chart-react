@@ -33,3 +33,14 @@
     gap: 30px;
     background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135C 0%, #140739 92.82%);
 }
+
+
+.wallet {
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135C 0%, #140739 92.82%);
+}
+
+.trn {
+    background: rgba(31,24,75);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}

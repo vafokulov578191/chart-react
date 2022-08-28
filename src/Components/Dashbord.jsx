@@ -13,7 +13,7 @@ import elisp from '../assets/Ellipse (3).png'
 import Poly from '../assets/Polygon.png'
 
 
-const Dashbord = () => {
+const Dashbord = ({Overview, borderOv, wllet, borderW, colorW, Trnsictions, borderT, colorT, exchange, borderE, colorE, markeT, borderM, colorM}) => {
     return (
         <Box className='bar' w='320px' h='100vh' padding='25px' display='flex' alignItems='center' flexDirection='column' justifyContent='space-between'>
             <Box display='flex' flexDirection='column' gap='40px' alignItems='center'>
@@ -22,40 +22,40 @@ const Dashbord = () => {
                     <Box w='120px' h='2px' backgroundColor='#1288E8' position='relative' bottom='10px' />
                 </Box>
                 <Box display='flex' flexDirection='column' gap='25px'>
-                    <Box w='200px' h='50px' bg='#32395E' display='flex' alignItems='center' padding='15px' borderRadius='5px' cursor='pointer' borderBottom='2px solid #1288E8'>
+                    <Box w='200px' h='50px' bg={Overview} display='flex' alignItems='center' padding='15px' borderRadius='5px' cursor='pointer' borderBottom={borderOv}>
                         <Side to='/overview' style={{ display: 'flex', gap: '15px', color: 'white', alignItems: 'center' }}>
                             <Image w='16px' h='16px' src={overview} />
                             <Text>Overview</Text>
                         </Side>
                     </Box>
 
-                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer'>
+                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={wllet} borderBottom={borderW}  >
                         <Side to='/wallets' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={wallets} />
-                            <Text>Wallets</Text>
+                            <Text color={colorW} >Wallets</Text>
                         </Side>
                     </Box>
 
-                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer'>
+                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={Trnsictions} borderBottom={borderT}>
                         <Side to='/transictions' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={Transictions} />
-                            <Text>Transictions</Text>
+                            <Text color={colorT}>Transictions</Text>
                         </Side>
                     </Box>
 
                     <Image src={Poly} w='65px' h='65px' top='514px' right='-24px' position='absolute' />
 
-                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer'>
+                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={exchange} borderBottom={borderE}>
                         <Side to='/exchange' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={Exchange} />
-                            <Text>Exchange</Text>
+                            <Text color={colorE}>Exchange</Text>
                         </Side>
                     </Box>
 
-                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer'>
+                    <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={markeT} borderBottom={borderM}>
                         <Side to='/market' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={market} />
-                            <Text>market</Text>
+                            <Text color={colorM}>market</Text>
                         </Side>
                     </Box>
 

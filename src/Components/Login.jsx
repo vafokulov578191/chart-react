@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Input, Image, Button } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import bg from '../../src/assets/Bg.png'
+// import { useForm } from 'react-hook-form'
 import './style.css'
 import kty from '../assets/Group 6.png'
 import user from '../assets/Group 2 (1).png'
@@ -13,6 +14,9 @@ import el from '../assets/Rectangle 8.png'
 
 
 const Login = () => {
+
+  // const [resgister, handleSubmit] = useForm()
+
   return (
     <Box w='100%' h='100vh' bg="#110929" display='flex' alignItems='center' justifyContent='center'>
       <Box display='flex' justifyContent='space-around' zIndex='1111' p='70px' bgRepeat='no-repeat' w='1366px' h='768px' bg={`url(${bg})`} borderRadius='12px' bgPosition='center' bgSize='cover' overflow='hidden'>
