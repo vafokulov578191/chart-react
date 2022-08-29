@@ -30,13 +30,13 @@ const Transictions = () => {
               </Box>
             </Box>
           </Box>
-          <One />
-          <One />
-          <One />
-          <One />
-          <One />
-          <One />
-          <One />
+          <One back={'#32395E'} text={'Waiting'} />
+          <One back={'#F35050'} text={'Error'} />
+          <One back={'#32395E'} text={'Waiting'} />
+          <One back={'#00E8ACBF'} text={'Completed'} />
+          <One back={'#32395E'} text={'Waiting'} />
+          <One back={'#32395E'} text={'Waiting'} />
+          <One back={'#32395E'} text={'Waiting'} />
         </Box>
       </Box>
     </Box>
