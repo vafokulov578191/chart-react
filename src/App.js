@@ -7,6 +7,8 @@ import Market from './Components/Market'
 import Wallets from './Components/Wallets'
 import Transictions from './Components/Transictions'
 import Overview from './Components/Overview'
+import Regist from './Components/Regist';
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate path='/' to="/login" replace={true}/>} replace={true} />
           <Route path='/Login' element={<Login/>} />
+          <Route path='/Regist' element={<Regist/>} />
           <Route path='/Exchange' element={<Exchange/>} />
           <Route path='/Market' element={<Market/>} />
           <Route path='/Wallets' element={<Wallets arr={[90, 30, 130]}/>} />
