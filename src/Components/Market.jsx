@@ -5,8 +5,16 @@ import { Box, Image, Text } from '@chakra-ui/react'
 import './style.css'
 import lg from '../assets/Overiew/Group 10.png'
 import la from '../assets/Overiew/Group 10 (1).png'
+import logo from '../assets/Overiew/Group 9.2.png'
+import logo1 from '../assets/Overiew/Group 10.1 (1).png'
+
 
 const Market = () => {
+
+  // position: relative;
+  //   bottom: 131px;
+  //   left: 34px;
+
   return (
     <Box className='wallet' w='100%' h='100vh' display='flex' gap='32px' >
       <Dashbord markeT={'#32395E'} borderM={'2px solid #1288E8'} colorM={'white'} />
@@ -16,41 +24,53 @@ const Market = () => {
         <Box w='100%' display='flex' flexDirection='column' gap='20px'>
           <Text color='white' fontSize='20px'>Market</Text>
           <Box w='100%' display='flex' flexWrap='wrap' p='30px' gap='35px'>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={lg} />
+              <Image src={logo1} position='relative' bottom='123px' left='24px' />
             </Box>
-            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px'>
+            <Box w='350px' h='190px' padding='15px' bg='#140D3E' borderRadius='5px' position='relative'>
               <Image src={la} />
+              <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
           </Box>
         </Box>

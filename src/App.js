@@ -8,7 +8,7 @@ import Wallets from './Components/Wallets'
 import Transictions from './Components/Transictions'
 import Overview from './Components/Overview'
 import Regist from './Components/Regist';
-
+import Paginate from './Components/Paginate'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route path='/Wallets' element={<Wallets arr={[90, 30, 130]}/>} />
           <Route path='/Transictions' element={<Transictions/>} />
           <Route path='/Overview' element={<Overview arr={[120, 20, 60]} />} />
+          <Route path='/Paginate' element={<Paginate/>} />
         </Routes>
       </div>
   );

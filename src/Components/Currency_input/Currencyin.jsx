@@ -8,6 +8,7 @@ import arrow from '../../assets/Arrow.png'
 
 
 const Currencyin = (props) => {
+    console.log(props);
 
     return (
         <Box display='flex' flexDirection='column' gap='26px' alignItems='center'>
@@ -34,13 +35,13 @@ const Currencyin = (props) => {
             </Box>
             <Box w='1550px' h='130px' bg='#160D3E' borderRadius='5px' display='flex' alignItems='center' justifyContent='center' gap='35px'>
                 <Box display='flex' gap='20px' color='white' alignItems='center'>
-                    <Text>0.45234 BTC</Text>
+                    <Text>{props.amount}</Text>
                     <Image src={logo} />
                 </Box>
                 <Image src={arrow} />
                 <Box display='flex' gap='20px' color='white' alignItems='center'>
                     <Image src={logo1} />
-                    <Text>1.45534 gRC</Text>
+                    <Text>{props.amount2}</Text>
                 </Box>
             </Box>
             <Button w='140px' h='42px' bg='#1288E8' color='white' fontSize='18px'>Exchange</Button>
