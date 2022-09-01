@@ -1,22 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Dashbord from './Dashbord'
 import Header from './Header'
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Image, Text } from '@chakra-ui/react'
 import './style.css'
 import lg from '../assets/Overiew/Group 10.png'
 import la from '../assets/Overiew/Group 10 (1).png'
 import logo from '../assets/Overiew/Group 9.2.png'
 import logo1 from '../assets/Overiew/Group 10.1 (1).png'
+import { Usercontext } from './Context.js'
 
 
 const Market = () => {
 
-  // position: relative;
-  //   bottom: 131px;
-  //   left: 34px;
+  let { color, setColor } = useContext(Usercontext)
+
+  console.log(color);
+
 
   return (
-    <Box className='wallet' w='100%' h='100vh' display='flex' gap='32px' >
+    <Box bg={color} w='100%' h='100vh' display='flex' gap='32px' >
       <Dashbord markeT={'#32395E'} borderM={'2px solid #1288E8'} colorM={'white'} />
       <Box display='flex' flexDirection='column' gap='25px' w='100%'>
         <Header />
@@ -73,6 +75,7 @@ const Market = () => {
               <Image src={logo} position='relative' bottom='131px' left='33px' />
             </Box>
           </Box>
+          <Button w='200px' h='40px' margin='0px auto' bg='blue' color='white' onClick={() => setColor('red')}>Color</Button>
         </Box>
       </Box>
     </Box>

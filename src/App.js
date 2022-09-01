@@ -9,10 +9,12 @@ import Transictions from './Components/Transictions'
 import Overview from './Components/Overview'
 import Regist from './Components/Regist';
 import Paginate from './Components/Paginate'
+import Context from './Components/Context';
 
 
 function App() {
   return (
+  <Context>
       <div className="App">
         <Routes>
           <Route path='/' element={<Navigate path='/' to="/login" replace={true}/>} replace={true} />
@@ -24,8 +26,10 @@ function App() {
           <Route path='/Transictions' element={<Transictions/>} />
           <Route path='/Overview' element={<Overview arr={[120, 20, 60]} />} />
           <Route path='/Paginate' element={<Paginate/>} />
+          <Route path='/Context' element={<Context/>} />
         </Routes>
       </div>
+ </Context>
   );
 }
 
