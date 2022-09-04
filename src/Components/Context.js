@@ -1,16 +1,16 @@
 import React, {createContext, useState} from 'react'
-export const Usercontext = createContext()
 
+export const AuthContext = createContext({})
 
 const Context = ({children}) => {
 
-    let [color, setColor] = useState('#140739')
-    
+  let [auth, setAuth] = useState({})
+
 
   return (
-    <Usercontext.Provider value={{color, setColor}}>
+    <AuthContext.Provider value={{auth, setAuth}}>
         {children}
-    </Usercontext.Provider>
+    </AuthContext.Provider>
   )
 }
 

@@ -23,7 +23,6 @@ const Exchange = () => {
   // }, [])
 
 
-
   function handleChangeAmount1(amount1) {
     setAmount2(amount1 * arr[currency2] / arr[currency1]);
     setAmount1(amount1);
