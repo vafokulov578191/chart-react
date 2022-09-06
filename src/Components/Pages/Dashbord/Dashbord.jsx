@@ -13,7 +13,7 @@ import elisp from '../../../assets/Ellipse (3).png'
 import Poly from '../../../assets/Polygon.png'
 
 
-const Dashbord = ({Overview, borderOv, wllet, borderW, colorW, Trnsictions, borderT, colorT, exchange, borderE, colorE, markeT, borderM, colorM}) => {
+const Dashbord = ({ovee, borderOv, wllet, borderW, colorW, Trnsictions, borderT, colorT, exchange, borderE, colorE, markeT, borderM, colorM}) => {
     return (
         <Box className='bar' w='320px' h='100vh' padding='25px' display='flex' alignItems='center' flexDirection='column' justifyContent='space-between'>
             <Box display='flex' flexDirection='column' gap='40px' alignItems='center'>
@@ -22,7 +22,7 @@ const Dashbord = ({Overview, borderOv, wllet, borderW, colorW, Trnsictions, bord
                     <Box w='120px' h='2px' backgroundColor='#1288E8' position='relative' bottom='10px' />
                 </Box>
                 <Box display='flex' flexDirection='column' gap='25px'>
-                    <Box w='200px' h='50px' bg={Overview} display='flex' alignItems='center' padding='15px' borderRadius='5px' cursor='pointer' borderBottom={borderOv}>
+                    <Box w='200px' h='50px' bg={ovee} display='flex' alignItems='center' padding='15px' borderRadius='5px' cursor='pointer' borderBottom={borderOv}>
                         <Side to='/overview' style={{ display: 'flex', gap: '15px', color: 'white', alignItems: 'center' }}>
                             <Image w='16px' h='16px' src={overview} />
                             <Text>Overview</Text>

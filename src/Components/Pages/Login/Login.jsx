@@ -9,12 +9,11 @@ import el from '../../../assets/Rectangle 8.png'
 import axios from '../../api/axios'
 import { AuthContext } from '../../Context'
 import Overview from '../Overview/Overview'
-
 const LOGIN_URL = '/auth'
 
 const Login = () => {
 
-  let {setAuth} = useContext(AuthContext)
+  let { setAuth } = useContext(AuthContext)
   let [user, setUser] = useState('')
   let [pwd, setPwd] = useState('')
   let [errMsg, setErrMsg] = useState('')
@@ -40,7 +39,6 @@ const Login = () => {
       setPwd('')
       setSuccess(true)
 
-
     } catch (err) {
       if (!err.response) {
         setErrMsg('No server response')
@@ -59,7 +57,9 @@ const Login = () => {
     <Box w='100%' h='100vh' bg="#110929" display='flex' alignItems='center' justifyContent='center'>
       {
         success ? (
-          <Overview/>
+          <>
+            <Overview />
+          </>
         ) : (
           <Box display='flex' justifyContent='space-around' zIndex='1111' p='70px' bgRepeat='no-repeat' w='1366px' h='768px' bg={`url(${bg})`} borderRadius='12px' bgPosition='center' bgSize='cover' overflow='hidden'>
             <Box className='top_header_block' zIndex='12112' position={'relative'} w='480px' h='595px' p='50px' display='flex' alignItems='center' color='white' flexDirection='column' gap='62px'>

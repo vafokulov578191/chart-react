@@ -4,13 +4,13 @@ import { Doughnut } from 'react-chartjs-2';
 Chart.register(ArcElement, LineController, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
 
 
-const Dougnout = ({arr}) => {
+const Dougnout = () => {
 
   return (
     <Doughnut data={{
         datasets: [{
           label: 'My First Dataset',
-          data: arr,
+          data: [120, 20, 60],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
