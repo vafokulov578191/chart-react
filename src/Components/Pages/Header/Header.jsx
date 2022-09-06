@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Input, Image } from '@chakra-ui/react'
-import ser from '../assets/Overiew/Vector (3).png'
-import masse from '../assets/Overiew/Group 3.png'
-import bud from '../assets/Overiew/Group (6).png'
+import ser from '../../../assets/Overiew/Vector (3).png'
+import masse from '../../../assets/Overiew/Group 3.png'
+import bud from '../../../assets/Overiew/Group (6).png'
 
 
 const Header = () => {

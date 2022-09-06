@@ -1,21 +1,27 @@
-import React from 'react'
-import './style.css';
-import Dashbord from './Dashbord'
-import Header from './Header';
+import React, {useContext} from 'react'
+import '../../style.css'
+import Dashbord from '../Dashbord/Dashbord'
+import Header from '../Header/Header';
 import { Box, Button, Text, Image } from '@chakra-ui/react';
-import Dougnout from './Chart/Dougnout.jsx';
-import Linespending from './Chart/Linespending';
-import Linechart from './Chart/Linechart';
-import Btc from '../assets/Group 13.png'
-import Gr from '../assets/Group 14.png'
-import ef from '../assets/Group 13 (1).png'
-import aet from '../assets/Group 15.png'
-
+import Dougnout from '../../Chart/Dougnout.jsx';
+import Linespending from '../../Chart/Linespending';
+import Linechart from '../../Chart/Linechart';
+import Btc from '../../../assets/Group 13.png'
+import Gr from '../../../assets/Group 14.png'
+import ef from '../../../assets/Group 13 (1).png'
+import aet from '../../../assets/Group 15.png'
+import { AuthContext } from '../../Context';
+import Login from '../Login/Login';
 
 const Overview = ({ arr }) => {
+  let {auth} = useContext(AuthContext)
+  let accessToken = auth.accessToken
 
   return (
-    <div className='Main'>
+    <>
+    {
+      accessToken !== undefined ? (
+        <div className='Main'>
       <Dashbord Overview={'#32395E'} borderOv={'2px solid #1288E8'} />
       <Box w='100%' h='100vh' display='flex' flexDirection='column' gap='25px'>
         <Header />
@@ -134,6 +140,12 @@ const Overview = ({ arr }) => {
         </Box>
       </Box>
     </div>
+      ) : (
+        <Login/>
+      )
+    }
+    </>
+    
   )
 }
 
