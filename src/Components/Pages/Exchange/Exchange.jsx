@@ -5,7 +5,6 @@ import { Box, Text } from '@chakra-ui/react'
 import '../../style.css'
 import Currencyin from '../../Currency_input/Currencyin'
 import axios from 'axios'
-import Login from '../Login/Login'
 import { AuthContext } from '../../Context'
 
 
@@ -80,7 +79,7 @@ const Exchange = () => {
             </Box>
           </Box>
         ) : (
-          <Login/>
+          window.location.href = '/login'
         )
     }
     </>

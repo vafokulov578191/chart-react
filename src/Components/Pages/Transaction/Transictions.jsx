@@ -5,7 +5,6 @@ import { Box, Button, Text } from '@chakra-ui/react'
 import '../../style.css'
 import One from '../../tranz_one_comp/One'
 import { AuthContext } from '../../Context';
-import Login from '../Login/Login';
 
 
 const Transictions = () => {
@@ -50,7 +49,7 @@ const Transictions = () => {
             </Box>
           </Box>
         ) : (
-          <Login/>
+          window.location.href = '/login'
         )
     }
     </>

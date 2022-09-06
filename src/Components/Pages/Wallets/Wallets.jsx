@@ -10,7 +10,6 @@ import gr from '../../../assets/Overiew/Group 9.png'
 import dsh from '../../../assets/Overiew/Group (7).png'
 import RadiusChart from '../../Chart/RadiusChart'
 import G from '../../../assets/Overiew/Group 14 (1).png'
-import Login from '../Login/Login'
 import { AuthContext } from '../../Context'
 
 
@@ -119,7 +118,7 @@ const Wallets = ({ arr }) => {
             </Box>
           </Box>
         ) : (
-          <Login />
+          window.location.href = '/login'
         )
       }
     </>

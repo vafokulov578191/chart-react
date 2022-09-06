@@ -23,21 +23,21 @@ const Dashbord = ({ovee, borderOv, wllet, borderW, colorW, Trnsictions, borderT,
                 </Box>
                 <Box display='flex' flexDirection='column' gap='25px'>
                     <Box w='200px' h='50px' bg={ovee} display='flex' alignItems='center' padding='15px' borderRadius='5px' cursor='pointer' borderBottom={borderOv}>
-                        <Side to='/overview' style={{ display: 'flex', gap: '15px', color: 'white', alignItems: 'center' }}>
+                        <Side to='/Overview' style={{ display: 'flex', gap: '15px', color: 'white', alignItems: 'center' }}>
                             <Image w='16px' h='16px' src={overview} />
                             <Text>Overview</Text>
                         </Side>
                     </Box>
 
                     <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={wllet} borderBottom={borderW}  >
-                        <Side to='/wallets' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
+                        <Side to='/Wallets' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={wallets} />
                             <Text color={colorW} >Wallets</Text>
                         </Side>
                     </Box>
 
                     <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={Trnsictions} borderBottom={borderT}>
-                        <Side to='/transictions' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
+                        <Side to='/Transictions' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={Transictions} />
                             <Text color={colorT}>Transictions</Text>
                         </Side>
@@ -46,14 +46,14 @@ const Dashbord = ({ovee, borderOv, wllet, borderW, colorW, Trnsictions, borderT,
                     <Image src={Poly} w='65px' h='65px' top='514px' right='-24px' position='absolute' />
 
                     <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={exchange} borderBottom={borderE}>
-                        <Side to='/exchange' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
+                        <Side to='/Exchange' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={Exchange} />
                             <Text color={colorE}>Exchange</Text>
                         </Side>
                     </Box>
 
                     <Box w='200px' h='50px' display='flex' alignItems='center' padding='12px' cursor='pointer' bg={markeT} borderBottom={borderM}>
-                        <Side to='/market' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
+                        <Side to='/Market' style={{ display: 'flex', gap: '16px', color: '#616A8B', alignItems: 'center' }}>
                             <Image src={market} />
                             <Text color={colorM}>market</Text>
                         </Side>
@@ -70,7 +70,7 @@ const Dashbord = ({ovee, borderOv, wllet, borderW, colorW, Trnsictions, borderT,
                         <Image src={elisp} />
                         <Text>Mike Jakson</Text>
                     </Box>
-                    <Side to='/Login' style={{display: 'flex', gap: '17px', alignItems: 'center', color: '#616A8B', cursor: 'pointer'}}>
+                    <Side to='/login' style={{display: 'flex', gap: '17px', alignItems: 'center', color: '#616A8B', cursor: 'pointer'}}>
                         <Image src={log_out} />
                         <Text>Log out</Text>
                     </Side>

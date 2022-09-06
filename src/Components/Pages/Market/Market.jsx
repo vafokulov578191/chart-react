@@ -8,7 +8,6 @@ import la from '../../../assets/Overiew/Group 10 (1).png'
 import logo from '../../../assets/Overiew/Group 9.2.png'
 import logo1 from '../../../assets/Overiew/Group 10.1 (1).png'
 import { AuthContext } from '../../Context';
-import Login from '../Login/Login';
 
 
 const Market = () => {
@@ -79,7 +78,7 @@ const Market = () => {
             </Box>
           </Box>
         ) : (
-          <Login/>
+          window.location.href = '/login'
         )
     }
     </>

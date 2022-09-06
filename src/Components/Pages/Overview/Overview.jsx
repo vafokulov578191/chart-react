@@ -11,7 +11,6 @@ import Gr from '../../../assets/Group 14.png'
 import ef from '../../../assets/Group 13 (1).png'
 import aet from '../../../assets/Group 15.png'
 import { AuthContext } from '../../Context';
-import Login from '../Login/Login';
 
 const Overview = () => {
   let { auth } = useContext(AuthContext)
@@ -140,9 +139,7 @@ const Overview = () => {
             </Box>
           </div>
         ) : (
-          <>
-            <Login />
-          </>
+          window.location.href = '/login'
         )
       }
     </>
