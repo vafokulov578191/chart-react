@@ -18,7 +18,6 @@ const Regist = () => {
                 setPost(response.data);
             } catch (err) {
                 if (err.response) {
-                    // Not in the 200 response range 
                     console.log(err.response.data);
                     console.log(err.response.status);
                     console.log(err.response.headers);
@@ -34,10 +33,10 @@ const Regist = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const newPost = { username: user, password: pwd }
+        const newPost = {user, pwd }
         console.log(newPost);
         try {
-            const res = await axios.post(LOGIN_URL, { newPost })
+            const res = await axios.post(LOGIN_URL,  newPost)
             const allPosts = [...Post, res.data];
             setPost(allPosts)
             setUser('')

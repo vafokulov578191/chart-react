@@ -8,6 +8,7 @@ import la from '../../../assets/Overiew/Group 10 (1).png'
 import logo from '../../../assets/Overiew/Group 9.2.png'
 import logo1 from '../../../assets/Overiew/Group 10.1 (1).png'
 import { AuthContext } from '../../Context';
+import { motion } from 'framer-motion'
 
 
 const Market = () => {
@@ -20,6 +21,12 @@ const Market = () => {
           <Box className='wallet' w='100%' h='100vh' display='flex' gap='32px' >
             <Dashbord markeT={'#32395E'} borderM={'2px solid #1288E8'} colorM={'white'} />
             <Box display='flex' flexDirection='column' gap='25px' w='100%'>
+              <motion.div
+                style={{ display: 'flex', flexDirection: 'column', gap: '25px', width: '100%' }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
               <Header />
               <Box w='99%' h='2px' backgroundColor='#2D317A' />
               <Box w='100%' display='flex' flexDirection='column' gap='20px'>
@@ -75,12 +82,13 @@ const Market = () => {
                   </Box>
                 </Box>
               </Box>
+              </motion.div>
             </Box>
           </Box>
         ) : (
           window.location.href = '/login'
         )
-    }
+      }
     </>
 
   )

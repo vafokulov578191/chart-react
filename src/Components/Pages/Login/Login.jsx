@@ -89,7 +89,7 @@ const Login = () => {
           </Box>
         )
       }
-    </Box >
+    </Box>
   )
 }
 
