@@ -33,10 +33,14 @@ const Regist = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const newPost = {user, pwd }
+        const newPost = { user, pwd }
         console.log(newPost);
         try {
-            const res = await axios.post(LOGIN_URL,  newPost)
+            const res = await axios.post(LOGIN_URL, JSON.stringify({ newPost }),
+                {
+                    headers: { "content-type": "application/json" },
+                    withCredentials: true
+                })
             const allPosts = [...Post, res.data];
             setPost(allPosts)
             setUser('')

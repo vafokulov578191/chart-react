@@ -13,8 +13,8 @@ const Exchange = () => {
   let accessToken = auth.accessToken
 
 
-  let [currency1, setCurrency1] = useState('USD')
-  let [currency2, setCurrency2] = useState('UZS')
+  let [currency1, setCurrency1] = useState('')
+  let [currency2, setCurrency2] = useState('')
   let [amount1, setAmount1] = useState()
   let [amount2, setAmount2] = useState()
   let [arr, setarr] = useState([])
