@@ -15,6 +15,7 @@ const Regist = () => {
         const fetchPosts = async () => {
             try {
                 const response = await axios.get('/users');
+                console.log(response.data);
                 setPost(response.data);
             } catch (err) {
                 if (err.response) {
