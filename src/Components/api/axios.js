@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'https://immense-plains-17989.herokuapp.com/',
+    baseURL: 'https://safe-wave-64344.herokuapp.com/',
 })
