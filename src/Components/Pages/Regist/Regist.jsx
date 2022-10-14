@@ -37,7 +37,7 @@ const Regist = () => {
         const newPost = { user, pwd }
         console.log(newPost);
         try {
-            const res = await axios.post(LOGIN_URL, JSON.stringify({ newPost }),
+            const res = await axios.post(LOGIN_URL, JSON.stringify(newPost),
                 {
                     headers: { "content-type": "application/json" },
                     withCredentials: true
